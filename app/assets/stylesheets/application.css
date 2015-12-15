@@ -19,17 +19,23 @@ html{
 }
 body{
 	margin: 0;
-	background:#1F7870;
+	background: #459895;
 }
 body header{
-	margin: 0 0 40px 0;
-	border-bottom: 1px solid black;
+	margin: 0 0 20px 0;
+	box-shadow: inset 0px 0px 100px -15px rgba(0,0,0,0.75);
 	background: #352C26;
 	border-radius: 15px;
 }
 div#wrapper{
 	margin: 15px;
 
+}
+main#content{
+	padding: 10px 30px;
+	border-radius: 15px;
+	background: #DA603B;
+	box-shadow: inset 0px 0px 20px -5px rgba(0,0,0,0.75);
 }
 
 .header_logo{
@@ -50,13 +56,21 @@ div#wrapper{
 	margin: 0 0 0 20px;
 }
 
+.header_slogan{
+	display: inline;
+	font-family: 'Raleway', sans-serif;
+	color: #9A9C8A;
+}
+
 header nav{
 	display: inline;
 	float: right;
+	margin-right: 30px;
 }
 
 header nav a{
 	text-decoration: none;
+	font-size: 15pt;
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	line-height: 120px;
