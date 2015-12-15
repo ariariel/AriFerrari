@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div id="wrapper">
-		<header>
+		<header class="brown_panel">
 			<%= link_to image_tag("shoe_head.png", size: "128"), {:controller=>'equalizer',:action=>'index'},{:class=>'header_logo'} %>
 			<%= link_to "Ari Ferrari", {:controller=>'equalizer',:action=>'index'},{:class=>'header_title'} %>
 			<p class="header_slogan">aka Ariel Farias</p>
@@ -21,6 +21,30 @@
 		<main id="content">
 			<%= yield %>
 		</main>
+		<div id="resume" class="brown_panel">
+			<h1>Resume</h1>
+			<div id="resume_left_col" class="resume_col">
+				<h2>Education</h2>
+				<ul>
+					<li>IB</li>
+					<li>UF</li>
+					<li>GSU</li>
+				</ul>
+			</div>
+			<div id="resume_right_col" class="resume_col">
+				<h2>Skills & Experience</h2>
+				<ul>
+					<li>ChordBuff</li>
+					<li>Android</li>
+					<li>iOS</li>
+				</ul>
+			</div>
+		</div>
+		<div class="contact_wrapper">
+			<%= mail_to "ari.ariel.farias@gmail.com", class: "contact_anchor" do%>
+				<h1>Email Me</h1>
+			<% end %>
+		</div>
 	</div>
 </body>
 </html>

@@ -2,7 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1,h2,h3,p {
-	color: #1E1A16;
-	font-family: 'Raleway', sans-serif;
+main#content {
+	h1,h2,h3,p,li {
+		color: #1E1A16;
+	}
 }
